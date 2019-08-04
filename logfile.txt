@@ -1,0 +1,527 @@
+2019-08-03 13:21:19.631  INFO 4456 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : Starting SpringBootBatchDbToCsvApplication on FR1WL428995 with PID 4456 (C:\Users\ek1248\Downloads\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv\target\classes started by EK1248 in C:\Users\ek1248\Downloads\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv)
+2019-08-03 13:21:19.634  INFO 4456 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : No active profile set, falling back to default profiles: default
+2019-08-03 13:21:19.671  INFO 4456 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1121db3: startup date [Sat Aug 03 13:21:19 EDT 2019]; root of context hierarchy
+2019-08-03 13:21:20.396  WARN 4456 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method ScopeConfiguration.stepScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-08-03 13:21:20.404  WARN 4456 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method ScopeConfiguration.jobScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-08-03 13:21:20.848  INFO 4456 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-08-03 13:21:20.859  INFO 4456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-03 13:21:20.860  INFO 4456 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-08-03 13:21:20.982  INFO 4456 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-03 13:21:20.982  INFO 4456 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1313 ms
+2019-08-03 13:21:21.156  INFO 4456 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-08-03 13:21:21.157  INFO 4456 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2019-08-03 13:21:21.159  INFO 4456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-03 13:21:21.159  INFO 4456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-03 13:21:21.159  INFO 4456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-03 13:21:21.159  INFO 4456 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-03 13:21:21.498  INFO 4456 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-03 13:21:21.512  INFO 4456 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-03 13:21:21.576  INFO 4456 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-08-03 13:21:21.607  INFO 4456 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-03 13:21:21.609  INFO 4456 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-08-03 13:21:21.659  INFO 4456 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-03 13:21:21.778  INFO 4456 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-03 13:21:22.124  INFO 4456 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-08-03 13:21:22.135  INFO 4456 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000476: Executing import script '/import.sql'
+2019-08-03 13:21:22.144  INFO 4456 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-08-03 13:21:22.181  INFO 4456 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-03 13:21:22.292  INFO 4456 --- [main] com.infotech.batch.config.BatchConfig    : READER START 
+2019-08-03 13:21:22.294  INFO 4456 --- [main] com.infotech.batch.config.BatchConfig    : READER END 
+2019-08-03 13:21:22.300  INFO 4456 --- [main] com.infotech.batch.config.BatchConfig    : Processor 
+2019-08-03 13:21:22.620  INFO 4456 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1121db3: startup date [Sat Aug 03 13:21:19 EDT 2019]; root of context hierarchy
+2019-08-03 13:21:22.677  INFO 4456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/entity/start],methods=[GET]}" onto public java.lang.String com.infotech.batch.ProductController.getProduct() throws java.lang.Exception
+2019-08-03 13:21:22.679  INFO 4456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-03 13:21:22.680  INFO 4456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-03 13:21:22.704  INFO 4456 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-03 13:21:22.704  INFO 4456 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-03 13:21:22.730  INFO 4456 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-03 13:21:22.834  WARN 4456 --- [main] o.s.b.a.batch.BasicBatchConfigurer       : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2019-08-03 13:21:22.836  INFO 4456 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2019-08-03 13:21:22.965  INFO 4456 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2019-08-03 13:21:22.978  INFO 4456 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+2019-08-03 13:21:23.006  INFO 4456 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 28 ms.
+2019-08-03 13:21:23.180  INFO 4456 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-03 13:21:23.227  INFO 4456 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-08-03 13:21:23.230  INFO 4456 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : Started SpringBootBatchDbToCsvApplication in 3.87 seconds (JVM running for 4.959)
+2019-08-03 13:22:52.551  INFO 4456 --- [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-03 13:22:52.551  INFO 4456 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-03 13:22:52.586  INFO 4456 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2019-08-03 13:22:52.822  INFO 4456 --- [http-nio-8080-exec-6] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=exportPeronJob]] launched with the following parameters: [{exportPeronJob=1564852972735}]
+2019-08-03 13:22:52.853  INFO 4456 --- [http-nio-8080-exec-6] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2019-08-03 13:22:52.890  INFO 4456 --- [SimpleAsyncTaskExecutor-2] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step3]
+2019-08-03 13:22:52.890  INFO 4456 --- [SimpleAsyncTaskExecutor-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step2]
+2019-08-03 13:22:52.903  INFO 4456 --- [http-nio-8080-exec-6] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=exportPeronJob]] completed with the following parameters: [{exportPeronJob=1564852972735}] and the following status: [COMPLETED]
+2019-08-03 13:26:03.153  INFO 17096 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : Starting SpringBootBatchDbToCsvApplication on FR1WL428995 with PID 17096 (C:\Users\ek1248\Downloads\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv\target\classes started by EK1248 in C:\Users\ek1248\Downloads\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv)
+2019-08-03 13:26:03.156  INFO 17096 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : No active profile set, falling back to default profiles: default
+2019-08-03 13:26:03.194  INFO 17096 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1121db3: startup date [Sat Aug 03 13:26:03 EDT 2019]; root of context hierarchy
+2019-08-03 13:26:03.927  WARN 17096 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method ScopeConfiguration.stepScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-08-03 13:26:03.935  WARN 17096 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method ScopeConfiguration.jobScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-08-03 13:26:04.361  INFO 17096 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-08-03 13:26:04.402  INFO 17096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-03 13:26:04.404  INFO 17096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-08-03 13:26:04.554  INFO 17096 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-03 13:26:04.554  INFO 17096 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1361 ms
+2019-08-03 13:26:04.711  INFO 17096 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-08-03 13:26:04.712  INFO 17096 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2019-08-03 13:26:04.715  INFO 17096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-03 13:26:04.715  INFO 17096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-03 13:26:04.716  INFO 17096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-03 13:26:04.716  INFO 17096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-03 13:26:05.085  INFO 17096 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-03 13:26:05.100  INFO 17096 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-03 13:26:05.165  INFO 17096 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-08-03 13:26:05.166  INFO 17096 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-03 13:26:05.167  INFO 17096 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-08-03 13:26:05.213  INFO 17096 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-03 13:26:05.330  INFO 17096 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-03 13:26:05.672  INFO 17096 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-08-03 13:26:05.682  INFO 17096 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000476: Executing import script '/import.sql'
+2019-08-03 13:26:05.690  INFO 17096 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-08-03 13:26:05.723  INFO 17096 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-03 13:26:05.798  INFO 17096 --- [main] com.infotech.batch.config.BatchConfig    : READER START 
+2019-08-03 13:26:05.800  INFO 17096 --- [main] com.infotech.batch.config.BatchConfig    : READER END 
+2019-08-03 13:26:05.806  INFO 17096 --- [main] com.infotech.batch.config.BatchConfig    : Processor 
+2019-08-03 13:26:06.154  INFO 17096 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1121db3: startup date [Sat Aug 03 13:26:03 EDT 2019]; root of context hierarchy
+2019-08-03 13:26:06.219  INFO 17096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/entity/start],methods=[GET]}" onto public java.lang.String com.infotech.batch.ProductController.getProduct() throws java.lang.Exception
+2019-08-03 13:26:06.220  INFO 17096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-03 13:26:06.221  INFO 17096 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-03 13:26:06.245  INFO 17096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-03 13:26:06.246  INFO 17096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-03 13:26:06.271  INFO 17096 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-03 13:26:06.356  WARN 17096 --- [main] o.s.b.a.batch.BasicBatchConfigurer       : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2019-08-03 13:26:06.358  INFO 17096 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2019-08-03 13:26:06.450  INFO 17096 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2019-08-03 13:26:06.461  INFO 17096 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+2019-08-03 13:26:06.477  INFO 17096 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 16 ms.
+2019-08-03 13:26:06.663  INFO 17096 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-03 13:26:06.711  INFO 17096 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-08-03 13:26:06.714  INFO 17096 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : Started SpringBootBatchDbToCsvApplication in 3.842 seconds (JVM running for 4.871)
+2019-08-03 13:26:31.736  INFO 17096 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-03 13:26:31.737  INFO 17096 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-03 13:26:31.764  INFO 17096 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2019-08-03 13:26:31.951  INFO 17096 --- [http-nio-8080-exec-10] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=exportPeronJob]] launched with the following parameters: [{exportPeronJob=1564853191869}]
+2019-08-03 13:26:31.979  INFO 17096 --- [http-nio-8080-exec-10] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2019-08-03 13:26:32.007  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.008  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.015  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.019  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.019  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.020  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.024  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.024  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.025  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.029  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.029  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.030  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.033  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.034  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.035  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.037  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.038  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.038  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.041  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.041  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.042  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.046  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.047  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.047  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.051  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.051  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.052  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.055  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.056  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.057  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.060  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.060  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.061  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.064  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.064  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.064  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.068  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.068  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.068  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.071  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.072  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.072  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.075  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.076  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.076  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.079  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.080  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.081  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.084  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.084  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.085  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.088  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.089  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.089  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.092  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.092  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.093  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.096  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.097  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.097  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.099  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.100  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.100  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.103  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.103  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.104  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.107  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.107  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.107  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.110  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.110  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:26:32.111  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.123  INFO 17096 --- [http-nio-8080-exec-10] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step2]
+2019-08-03 13:26:32.127  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.127  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.127  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.128  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.130  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.131  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.132  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.132  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.135  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.136  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.136  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.136  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.138  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.139  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.139  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.139  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.141  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.142  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.142  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.142  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.144  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.145  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.145  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.145  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.147  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.147  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.148  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.148  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.150  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.151  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.151  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.151  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.153  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.153  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.153  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.154  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.155  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.156  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.156  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.156  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.158  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.158  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.158  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.159  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.161  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.161  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.161  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:26:32.161  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.167  INFO 17096 --- [http-nio-8080-exec-10] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step3]
+2019-08-03 13:26:32.169  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.170  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.170  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.170  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 3
+2019-08-03 13:26:32.170  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.172  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.172  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.173  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.173  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 3
+2019-08-03 13:26:32.173  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.174  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.175  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.175  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.175  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 3
+2019-08-03 13:26:32.175  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.177  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.177  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.177  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.177  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 3
+2019-08-03 13:26:32.177  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.178  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.178  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.179  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.179  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 3
+2019-08-03 13:26:32.179  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.180  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.180  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.180  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.180  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 3
+2019-08-03 13:26:32.181  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.182  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.182  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.182  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.182  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 3
+2019-08-03 13:26:32.182  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.183  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.183  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.183  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:26:32.183  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 3
+2019-08-03 13:26:32.184  INFO 17096 --- [http-nio-8080-exec-10] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:26:32.188  INFO 17096 --- [http-nio-8080-exec-10] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=exportPeronJob]] completed with the following parameters: [{exportPeronJob=1564853191869}] and the following status: [COMPLETED]
+2019-08-03 13:28:08.472  INFO 13544 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : Starting SpringBootBatchDbToCsvApplication on FR1WL428995 with PID 13544 (C:\Users\ek1248\Downloads\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv\target\classes started by EK1248 in C:\Users\ek1248\Downloads\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv)
+2019-08-03 13:28:08.475  INFO 13544 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : No active profile set, falling back to default profiles: default
+2019-08-03 13:28:08.512  INFO 13544 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1121db3: startup date [Sat Aug 03 13:28:08 EDT 2019]; root of context hierarchy
+2019-08-03 13:28:09.255  WARN 13544 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method ScopeConfiguration.stepScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-08-03 13:28:09.263  WARN 13544 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method ScopeConfiguration.jobScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-08-03 13:28:09.741  INFO 13544 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-08-03 13:28:09.749  INFO 13544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-03 13:28:09.749  INFO 13544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-08-03 13:28:09.904  INFO 13544 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-03 13:28:09.905  INFO 13544 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1394 ms
+2019-08-03 13:28:10.067  INFO 13544 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-08-03 13:28:10.068  INFO 13544 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2019-08-03 13:28:10.070  INFO 13544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-03 13:28:10.070  INFO 13544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-03 13:28:10.070  INFO 13544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-03 13:28:10.070  INFO 13544 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-03 13:28:10.430  INFO 13544 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-03 13:28:10.443  INFO 13544 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-03 13:28:10.505  INFO 13544 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-08-03 13:28:10.506  INFO 13544 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-03 13:28:10.507  INFO 13544 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-08-03 13:28:10.554  INFO 13544 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-03 13:28:10.683  INFO 13544 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-03 13:28:11.016  INFO 13544 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-08-03 13:28:11.027  INFO 13544 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000476: Executing import script '/import.sql'
+2019-08-03 13:28:11.034  INFO 13544 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-08-03 13:28:11.063  INFO 13544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-03 13:28:11.131  INFO 13544 --- [main] com.infotech.batch.config.BatchConfig    : READER START 
+2019-08-03 13:28:11.133  INFO 13544 --- [main] com.infotech.batch.config.BatchConfig    : READER END 
+2019-08-03 13:28:11.142  INFO 13544 --- [main] com.infotech.batch.config.BatchConfig    : Processor 
+2019-08-03 13:28:11.506  INFO 13544 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1121db3: startup date [Sat Aug 03 13:28:08 EDT 2019]; root of context hierarchy
+2019-08-03 13:28:11.570  INFO 13544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/entity/start],methods=[GET]}" onto public java.lang.String com.infotech.batch.ProductController.getProduct() throws java.lang.Exception
+2019-08-03 13:28:11.573  INFO 13544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-03 13:28:11.573  INFO 13544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-03 13:28:11.596  INFO 13544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-03 13:28:11.596  INFO 13544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-03 13:28:11.623  INFO 13544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-03 13:28:11.697  WARN 13544 --- [main] o.s.b.a.batch.BasicBatchConfigurer       : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2019-08-03 13:28:11.698  INFO 13544 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2019-08-03 13:28:11.792  INFO 13544 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2019-08-03 13:28:11.804  INFO 13544 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+2019-08-03 13:28:11.821  INFO 13544 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 16 ms.
+2019-08-03 13:28:11.993  INFO 13544 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-03 13:28:12.042  INFO 13544 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-08-03 13:28:12.045  INFO 13544 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : Started SpringBootBatchDbToCsvApplication in 3.848 seconds (JVM running for 4.92)
+2019-08-03 13:28:24.906  INFO 13544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-03 13:28:24.906  INFO 13544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-03 13:28:24.930  INFO 13544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-08-03 13:28:25.044  INFO 13544 --- [http-nio-8080-exec-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=exportPeronJob]] launched with the following parameters: [{exportPeronJob=1564853305006}]
+2019-08-03 13:28:25.055  INFO 13544 --- [http-nio-8080-exec-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2019-08-03 13:28:25.066  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.066  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.068  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.070  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.070  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.071  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.071  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.071  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.071  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.073  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.073  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.074  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.074  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.075  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.075  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.076  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.076  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.076  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.077  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.078  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.078  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.079  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.080  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.080  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.081  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.081  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.082  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.083  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.083  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.083  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.091  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.091  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.091  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.093  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.093  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.093  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.094  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.094  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.094  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.096  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.096  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.097  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.097  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.097  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.098  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.099  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.100  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.100  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.101  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.101  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.101  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.103  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.103  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.103  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.105  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.105  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.105  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.106  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.106  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.106  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.107  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.108  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.108  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.109  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.109  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.109  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.110  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.110  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.110  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.111  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.111  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 1
+2019-08-03 13:28:25.111  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.117  INFO 13544 --- [http-nio-8080-exec-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step2]
+2019-08-03 13:28:25.118  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.118  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.118  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.119  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.120  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.120  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.120  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.121  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.122  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.123  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.123  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.123  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.125  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.131  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.131  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.131  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.132  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.133  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.133  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.133  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.134  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.134  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.135  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.135  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.136  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.136  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.136  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.137  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.138  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.138  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.138  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.138  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.139  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.140  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.140  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.140  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.142  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.142  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.142  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.142  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.143  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.143  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.143  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.144  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.145  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.146  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.146  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 2
+2019-08-03 13:28:25.146  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.151  INFO 13544 --- [http-nio-8080-exec-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step3]
+2019-08-03 13:28:25.153  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.153  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.153  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.153  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.154  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.154  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.154  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.154  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 7
+2019-08-03 13:28:25.154  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":11,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":12,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":13,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":14,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":15,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":16,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":18,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.156  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.156  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.156  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.156  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.156  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.156  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.156  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.156  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 7
+2019-08-03 13:28:25.157  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":19,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":20,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":112,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":113,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":114,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":115,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.158  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.158  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.158  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.158  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.159  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.159  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.159  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.159  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 7
+2019-08-03 13:28:25.159  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":116,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":117,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":118,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":119,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1111,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1122,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1133,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.160  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.160  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.161  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.processor.PersonItenProcessor  : Person Data ::{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}
+2019-08-03 13:28:25.161  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: 3
+2019-08-03 13:28:25.161  INFO 13544 --- [http-nio-8080-exec-1] c.i.batch.config.CustomItemItemWriter    : List is not empty :: [{"personId":1144,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1155,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1},{"personId":1166,"firstName":"sanj@gmail.com","lastName":"mac","email":"kumar","age":1}]
+2019-08-03 13:28:25.164  INFO 13544 --- [http-nio-8080-exec-1] o.s.b.c.l.support.SimpleJobLauncher      : Job: [SimpleJob: [name=exportPeronJob]] completed with the following parameters: [{exportPeronJob=1564853305006}] and the following status: [COMPLETED]
+2019-08-04 14:32:33.361  INFO 17084 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : Starting SpringBootBatchDbToCsvApplication on FR1WL428995 with PID 17084 (C:\Users\ek1248\Downloads\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv\target\classes started by EK1248 in C:\Users\ek1248\Downloads\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv-master\SpringBootBatchDbToCsv)
+2019-08-04 14:32:33.363  INFO 17084 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : No active profile set, falling back to default profiles: default
+2019-08-04 14:32:33.410  INFO 17084 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1121db3: startup date [Sun Aug 04 14:32:33 EDT 2019]; root of context hierarchy
+2019-08-04 14:32:34.135  WARN 17084 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method ScopeConfiguration.stepScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-08-04 14:32:34.144  WARN 17084 --- [main] o.s.c.a.ConfigurationClassEnhancer       : @Bean method ScopeConfiguration.jobScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-08-04 14:32:34.626  INFO 17084 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8090 (http)
+2019-08-04 14:32:34.634  INFO 17084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-04 14:32:34.635  INFO 17084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-08-04 14:32:34.769  INFO 17084 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-04 14:32:34.769  INFO 17084 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1361 ms
+2019-08-04 14:32:34.930  INFO 17084 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-08-04 14:32:34.931  INFO 17084 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2019-08-04 14:32:34.933  INFO 17084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-04 14:32:34.933  INFO 17084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-04 14:32:34.933  INFO 17084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-04 14:32:34.933  INFO 17084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-04 14:32:35.292  INFO 17084 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-04 14:32:35.305  INFO 17084 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 14:32:35.371  INFO 17084 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-08-04 14:32:35.372  INFO 17084 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-04 14:32:35.374  INFO 17084 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-08-04 14:32:35.418  INFO 17084 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-04 14:32:35.535  INFO 17084 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 14:32:35.874  INFO 17084 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-08-04 14:32:35.885  INFO 17084 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000476: Executing import script '/import.sql'
+2019-08-04 14:32:35.892  INFO 17084 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-08-04 14:32:35.959  INFO 17084 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 14:32:36.021  INFO 17084 --- [main] com.infotech.batch.config.BatchConfig    : READER START 
+2019-08-04 14:32:36.022  INFO 17084 --- [main] com.infotech.batch.config.BatchConfig    : READER END 
+2019-08-04 14:32:36.027  INFO 17084 --- [main] com.infotech.batch.config.BatchConfig    : Processor 
+2019-08-04 14:32:36.305  INFO 17084 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1121db3: startup date [Sun Aug 04 14:32:33 EDT 2019]; root of context hierarchy
+2019-08-04 14:32:36.366  INFO 17084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/entity/start],methods=[GET]}" onto public java.lang.String com.infotech.batch.ProductController.getProduct() throws java.lang.Exception
+2019-08-04 14:32:36.369  INFO 17084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-04 14:32:36.369  INFO 17084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-04 14:32:36.397  INFO 17084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-04 14:32:36.397  INFO 17084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-04 14:32:36.421  INFO 17084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-04 14:32:36.512  WARN 17084 --- [main] o.s.b.a.batch.BasicBatchConfigurer       : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2019-08-04 14:32:36.513  INFO 17084 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2019-08-04 14:32:36.610  INFO 17084 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2019-08-04 14:32:36.624  INFO 17084 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+2019-08-04 14:32:36.642  INFO 17084 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 17 ms.
+2019-08-04 14:32:36.809  INFO 17084 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-04 14:32:36.857  INFO 17084 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
+2019-08-04 14:32:36.859  INFO 17084 --- [main] c.i.b.SpringBootBatchDbToCsvApplication  : Started SpringBootBatchDbToCsvApplication in 3.751 seconds (JVM running for 4.765)
+2019-08-04 14:32:51.242  INFO 17084 --- [http-nio-8090-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-04 14:32:51.242  INFO 17084 --- [http-nio-8090-exec-5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-04 14:32:51.283  INFO 17084 --- [http-nio-8090-exec-5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
